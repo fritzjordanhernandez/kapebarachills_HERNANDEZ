@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KapebaraChills - Coffee Shop</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4e9dc;
+            color: #4b2c20;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: linear-gradient(to right, #4b2c20, #6f4e37);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc99;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?coffee,coffeeshop') no-repeat center center/cover;
+            color: white;
+            padding: 150px 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: #ffcc99;
+            padding: 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+            width: 250px;
+            text-align: center;
+        }
+
+        .menu-item:hover {
+            background: #e6b685;
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background: #6f4e37;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4b2c20;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4b2c20;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to KapebaraChills</h1>
+        <p>Your cozy coffee shop for relaxation, productivity, and great conversations.</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>KapebaraChills is not just a coffee shop; it’s an experience. We offer premium, ethically sourced coffee, delicious pastries, and a warm ambiance that makes every visit special. Whether you're here to study, work, or simply enjoy a great cup of coffee, we've got the perfect spot for you.</p>
+            <img src="https://source.unsplash.com/800x500/?coffee,cafe" alt="Cozy Coffee Shop" width="100%">
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/250x250/?espresso,coffee" alt="Espresso">
+                    <p><strong>Espresso</strong><br>Rich, bold, and full of flavor.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/250x250/?cappuccino,coffee" alt="Cappuccino">
+                    <p><strong>Cappuccino</strong><br>Perfectly balanced with frothy milk.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/250x250/?latte,coffee" alt="Latte">
+                    <p><strong>Latte</strong><br>Creamy, smooth, and delicious.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/250x250/?mocha,coffee" alt="Mocha">
+                    <p><strong>Mocha</strong><br>A delightful mix of coffee and chocolate.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://source.unsplash.com/250x250/?coldbrew,coffee" alt="Cold Brew">
+                    <p><strong>Cold Brew</strong><br>Chilled, smooth, and refreshing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> info@kapebarachills.com</p>
+            <p><strong>Phone:</strong> 09564781636</p>
+            <p><strong>Visit Us:</strong> Ibaan, Batangas - A home for coffee lovers.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 KapebaraChills - Hernandez Company</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            alert("Welcome to KapebaraChills! Enjoy the finest
